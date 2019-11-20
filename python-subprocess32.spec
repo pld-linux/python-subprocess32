@@ -5,18 +5,21 @@
 Summary:	Backport of the subprocess module from Python 3 for use on 2.x
 Summary(pl.UTF-8):	Backport modułu subprocess z Pythona 3 do użycia w 2.x
 Name:		python-subprocess32
-Version:	3.5.2
+Version:	3.5.4
 Release:	1
 License:	PSF v2
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/subprocess32/
 Source0:	https://files.pythonhosted.org/packages/source/s/subprocess32/subprocess32-%{version}.tar.gz
-# Source0-md5:	4bd55a9fe9504a683255c4f51b1679ae
+# Source0-md5:	748844d560be5f0c707931cba1cdb48b
 URL:		https://github.com/google/python-subprocess32
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	python-modules >= 1:2.6
 BuildRequires:	python-setuptools
+%if %{with tests}
+BuildRequires:	python-test
+%endif
 Requires:	python-modules >= 1:2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
