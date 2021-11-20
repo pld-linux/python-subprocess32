@@ -6,7 +6,7 @@ Summary:	Backport of the subprocess module from Python 3 for use on 2.x
 Summary(pl.UTF-8):	Backport modułu subprocess z Pythona 3 do użycia w 2.x
 Name:		python-subprocess32
 Version:	3.5.4
-Release:	2
+Release:	3
 License:	PSF v2
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/subprocess32/
